@@ -27,6 +27,8 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             }
 
             return $projectionManager;
-        });    
+        });
+
+        $this->commands(\DeSmart\EventSourcing\Laravel\Projections\Console\RebuildProjectionsCommand::class);
     }
 }

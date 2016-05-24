@@ -106,10 +106,15 @@ return [
 This package's event store implementation was successfully used/tested with MySql database, MongoDB database as well as 
 with mix of the two: one database served as an event store, where second was storing projections.
 
-Event store required structure (however different column types allowed) can be found [here](https://github.com/desmart/event-sourcing/blob/master/example/database/migrations/2016_05_16_125159_create_event_store_table.php).
+Event store required structure (however different column types allowed) can be found [here](https://github.com/DeSmart/laravel-event-sourcing/blob/master/example/database/migrations/2016_05_16_125159_create_event_store_table.php).
 
 ## License
 Package is released under the MIT License (MIT). Please, check [LICENSE](https://github.com/desmart/event-sourcing/blob/master/LICENSE) for more details.
 
 ## Example usage
 For example use of event store as well as project manager, check [`example/`](https://github.com/desmart/laravel-event-sourcing/tree/master/example) directory.
+
+Additionally, package provides artisan command for rebuilding all projections:
+```php
+php artisan projections:rebuild
+```

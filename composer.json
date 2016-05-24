@@ -17,6 +17,7 @@
     "require": {
         "php": ">=5.6.0",
         "desmart/event-sourcing": "1.*",
+        "illuminate/console": "5.2.*",
         "illuminate/contracts": "5.2.*",
         "illuminate/database": "5.2.*",
         "illuminate/support": "5.2.*"
