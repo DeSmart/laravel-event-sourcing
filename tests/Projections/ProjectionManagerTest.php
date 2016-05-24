@@ -30,7 +30,7 @@ class ProjectionManagerTest extends \PHPUnit_Framework_TestCase
      */
     public function it_registers_and_notifies_projection()
     {
-        $eventStream = new EventStream(...[new PointsWereAdded(100)]);
+        $eventStream = new EventStream(new PointsWereAdded(100));
 
         $this->assertEquals(0, $this->projection->getPoints());
 
@@ -44,7 +44,7 @@ class ProjectionManagerTest extends \PHPUnit_Framework_TestCase
      */
     public function it_clears_projection()
     {
-        $eventStream = new EventStream(...[new PointsWereAdded(100)]);
+        $eventStream = new EventStream(new PointsWereAdded(100));
 
         $this->assertEquals(0, $this->projection->getPoints());
 

@@ -84,7 +84,7 @@ class DbEventStoreTest extends \PHPUnit_Framework_TestCase
     public function it_appends_events()
     {
         $event = new PointsWereAdded(100);
-        $stream = new EventStream(...[$event]);
+        $stream = new EventStream($event);
 
         $eventData = [
             'aggregate_root_id' => 'BarId',
