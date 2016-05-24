@@ -1,0 +1,37 @@
+{
+    "name": "desmart/laravel-event-sourcing",
+    "description": "Laravel bindings for DeSmart Event Sourcing package",
+    "keywords": ["laravel", "event", "sourcing"],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Radoslaw Mejer",
+            "email": "radmen@desmart.com"
+        },
+        {
+            "name": "Michal Golon",
+            "email": "gollum@desmart.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "desmart/event-sourcing": "1.*",
+        "illuminate/contracts": "5.2.*",
+        "illuminate/database": "5.2.*",
+        "illuminate/support": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DeSmart\\EventSourcing\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "stubs\\": "stubs"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    }
+}
