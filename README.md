@@ -2,6 +2,10 @@
 
 Simple Laravel implementation of event sourcing mechanism.
 
+[![Latest version](https://img.shields.io/github/release/desmart/laravel-event-sourcing.svg)](https://github.com/DeSmart/laravel-event-sourcing/releases)
+[![Build Status](https://travis-ci.org/DeSmart/laravel-event-sourcing.svg?branch=master)](https://travis-ci.org/DeSmart/laravel-event-sourcing)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/desmart/laravel-event-sourcing/blob/master/LICENSE)
+
 _**Be advised:**_ this package is work in progress and some breaking changes may appear on the way.
 
 Package realizes concept of event sourcing with Laravel framework. Package consists of two main elements: 
@@ -102,5 +106,10 @@ return [
 This package's event store implementation was successfully used/tested with MySql database, MongoDB database as well as 
 with mix of the two: one database served as an event store, where second was storing projections.
 
+Event store required structure (however different column types allowed) can be found [here](https://github.com/desmart/event-sourcing/blob/master/example/database/migrations/2016_05_16_125159_create_event_store_table.php).
+
 ## License
 Package is released under the MIT License (MIT). Please, check [LICENSE](https://github.com/desmart/event-sourcing/blob/master/LICENSE) for more details.
+
+## Example usage
+For example use of event store as well as project manager, check [`example/`](https://github.com/desmart/laravel-event-sourcing/tree/master/example) directory.
