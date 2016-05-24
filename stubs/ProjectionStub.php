@@ -10,6 +10,9 @@ class ProjectionStub implements ProjectionInterface
 {
     use WhenTrait;
 
+    /**
+     * @var int
+     */
     protected $points = 0;
 
     /**
@@ -25,7 +28,7 @@ class ProjectionStub implements ProjectionInterface
      */
     public function clear()
     {
-        // TODO: Implement clear() method.
+        $this->points = 0;
     }
 
     /**
