@@ -4,10 +4,9 @@ namespace stubs;
 
 use DeSmart\EventSourcing\AggregateRootIdInterface;
 use DeSmart\EventSourcing\EventInterface;
-use DeSmart\EventSourcing\SerializableInterface;
 use Illuminate\Contracts\Support\Arrayable;
 
-class PointsWereAdded implements EventInterface, Arrayable, SerializableInterface
+class PointsWereAdded implements EventInterface, Arrayable, \JsonSerializable
 {
     protected $amount = 0;
 
